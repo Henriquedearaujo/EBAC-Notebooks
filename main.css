@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    background-color: #f7f2f2;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container h3 {
+    margin-top: 16px;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header {
+    background-color: aqua;
+    padding: 16px;
+    border-bottom: 1px solid #5f0ec9;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-style: italic;
+}
+
+
+
+header nav li a {
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid #5f0ec9;
+    
+}
+
+
+nav li {
+    list-style: none;
+    display: inline;
+    margin-right: 16px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.container-flex {
+    display: flex;
+}
+
+#sobre-a-loja img {
+    max-width: 400px;
+    margin-right: 24px;
+}
+
+section h2 {
+    background-color: aqua;
+    /* margin-bottom: 40px; */
+    padding-left: 8px;
+    border-bottom: 2px solid #5f0ec9;
+    font-style: italic;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+.produtos img {
+    max-width: 250px;
+    width: 100%;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1em;
+}
+
+.produtos li, .sobre  {
+    list-style: none;
+    margin-top: 40px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: #5f0ec9;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-top: 16px;
+}
+
+.produtos li h3 {
+    margin-bottom: 16px ;
+    display: block;
+}
+
+@media screen and (max-width: 640px) {
+
+    header {
+        margin: 0px;
+    }
+  
+    .container {
+        overflow: hidden;
+        padding: 32px;
+    }
+
+    .container h1 {
+        padding-right: 50px;
+    }
+
+    .container-flex {
+        display: block;
+    }
+
+    .container h1 {
+        margin-right: 16px;
+        font-size: 24px;
+    } 
+    #sobre-a-loja {
+        padding: 0px;
+    }
+
+    #sobre-a-loja img {
+        max-width: 600px;
+        width: 100%;
+        margin: 0px;
+    }
+    
+    .conteudo {
+        margin-top: 40px;
+    }
+
+    .produtos {
+        display: block;
+    }
+
+    .produtos img {
+        max-width: 600px;
+        width: 100%;
+        
+    }
+    
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+
+    header {
+        margin: 0;
+        height: 67px; 
+        width: 100%;
+    }
+
+    header .container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+
+    .container-flex {
+        display: block;
+        padding: 40px;
+    }
+
+    #sobre-a-loja img {
+        max-width: 1000px;
+        width: 100%;
+        margin: 0;
+        
+    }
+
+    .conteudo {
+        margin-top: 40px;
+    }
+
+    .produtos img {
+        max-width: 600px;
+        width: 100%;
+        
+    }
+    .display-grid {
+        padding: 40px;
+    }
+
+    .produtos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1em;
+        
+        
+    }
+}
+
+
+
+/* 
+@media screen and (max-width: 767px) {
+    .conteudo {
+        display: block;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+    .destaque .noticia a {
+        display: block;
+        font-size: 1em;
+    }
+
+    .destaque .noticia img{
+        margin-left: 0;
+    }
+
+    .noticias {
+        display: block;
+    }
+
+    .noticias .noticia {
+        margin-bottom: 32px;
+    }
+
+    aside {
+        padding-left: 0;
+    }
+
+    header div.container {
+        flex-direction: column;
+    }
+
+    .submenu {
+        display: block;
+        width: 100%;
+        position: relative;
+        border: none;
+    
+    }
+
+    .menu {
+        display: none;
+    }
+    
+    .menu > li {
+        clear: both;
+    }
+    
+    .submenu li {
+        display: block;
+        padding: 8px;
+    }
+
+    .botao-menu {
+        display: flex;
+        justify-content: center;
+        margin-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    .botao-menu button {
+        padding: 8px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .botao-menu {
+        display: none;
+    }
+
+    .destaque .noticia a {
+        font-size: 1.5em;
+    }
+
+    .noticias {
+        grid-template-columns: repeat(2, 49%);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .botao-menu {
+        display: none;
+    }
+}  */
